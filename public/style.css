@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(45, 46, 59);
+}
+
+video {
+    height: 250px;
+    width: 350px;
+    border: 2px solid rgb(82, 192, 60);
+    margin: 2px;
+}
