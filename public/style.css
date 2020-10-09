@@ -3,8 +3,37 @@ body {
 }
 
 video {
-    height: 250px;
-    width: 350px;
-    border: 2px solid rgb(82, 192, 60);
-    margin: 2px;
+    height: 350px;
+    width: 400px;
+
+    margin-left: 8px;
+}
+
+#my-video {
+    max-height: 80vh;
+}
+
+.row {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(12, 12, 29);
+    padding: 2px;
+}
+.video__div {
+    overflow-y: scroll;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat__div {
+    overflow-y: auto;
+    height: 90vh;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
