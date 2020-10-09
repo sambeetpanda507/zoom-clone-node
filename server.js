@@ -28,6 +28,9 @@ io.on("connection", (socket) => {
         socket.join(roomId);
         socket.to(roomId).broadcast.emit("user-connected", userId);
     });
+    socket.on("message", (msg, roomId) => {
+        socket.to(roomId).broadcast.emit("message", msg);
+    });
 });
 
 server.listen(port, () => {

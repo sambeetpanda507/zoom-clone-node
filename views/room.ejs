@@ -9,6 +9,12 @@
             integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
             crossorigin="anonymous"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="style.css" />
         <title><%= title %></title>
     </head>
@@ -17,8 +23,22 @@
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-8 video__div">
                     <div id="my-video"></div>
+                    <div class="controls text-center">
+                        <i
+                            class="fas fa-video text-success fa-2x mt-1"
+                            id="camera"
+                        ></i>
+                    </div>
                 </div>
-                <div class="col-md-4 border border-success chat__div">2</div>
+                <div class="col-md-4 chat__div">
+                    <div class="chat__box"></div>
+                    <div class="message__div d-flex mt-3">
+                        <input type="text" class="form-control" id="msg" />
+                        <button class="btn btn-primary ml-1" id="sendBtn">
+                            Send
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- first socket.io script the script.js -->
@@ -43,5 +63,12 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"
         ></script>
+        <!-- <script>
+            $(document).ready(function () {
+                $("#camera").click(() => {
+                    $("i").addClass("text-danger");
+                });
+            });
+        </script> -->
     </body>
 </html>
